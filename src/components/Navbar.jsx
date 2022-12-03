@@ -3,9 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const links = ["Home", "Users", "Analytics", "Blogs"];
-  //   const image_Url =
-  //     "https://images.unsplash.com/photo-1584441405886-bc91be61e56a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=430&q=80";
-  const [size, setSize] = useState(undefined);
+  const [size, setSize] = useState(window.innerWidth);
   const [sideMenuOpen, setsideMenuOpen] = useState(false);
   useEffect(() => {
     const handleResize = () => setSize(window.innerWidth);

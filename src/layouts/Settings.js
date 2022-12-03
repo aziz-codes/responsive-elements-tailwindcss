@@ -1,5 +1,3 @@
-import React from "react";
-
 const Settings = () => {
   return (
     <div className="fixed right-4 bottom-16 h-96 w-56 z-50 max-w-3xl bg-white shadow-lg border ">
