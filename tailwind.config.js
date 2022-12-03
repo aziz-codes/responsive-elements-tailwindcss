@@ -7,7 +7,11 @@ module.exports = {
     "./src/pages/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "my-blue": "#0284c7",
+      },
+    },
   },
   plugins: [],
 };
