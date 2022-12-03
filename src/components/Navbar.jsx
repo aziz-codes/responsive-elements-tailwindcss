@@ -16,8 +16,6 @@ const Navbar = () => {
   useEffect(() => {
     if (size >= 640) {
       setsideMenuOpen(false);
-    } else {
-      setsideMenuOpen(true);
     }
   }, [size]);
 

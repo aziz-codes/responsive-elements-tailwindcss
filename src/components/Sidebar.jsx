@@ -44,7 +44,7 @@ const Sidebar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "flex flex-row gap-2 w-full items-center bg-white  font-semibold cursor-pointer h-11 rounded-md justify-center lg:justify-start"
+                ? "flex flex-row gap-2 w-full items-center bg-white  font-semibold tracking-tight cursor-pointer h-11 rounded-md justify-center lg:justify-start"
                 : "flex flex-row gap-2 items-center bg-white w-full hover:bg-slate-100 cursor-pointer h-11 rounded-md justify-center lg:justify-start"
             }
             key={index}

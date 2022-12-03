@@ -8,7 +8,7 @@ import Settings from "./layouts/Settings";
 import { useStateContext } from "./contexts/Context";
 const App = () => {
   const { clicked, setClicked, navMenu } = useStateContext();
-  console.log(navMenu);
+
   return (
     <div
       className={`w-full h-full flex ${
@@ -18,7 +18,7 @@ const App = () => {
       {navMenu === "navbar" ? <Navbar /> : <Sidebar />}
       <div
         className={`w-full px-2 ${
-          navMenu === "sidebar" ? "md:ml-24 lg:ml-56 mt-4" : ""
+          navMenu === "sidebar" ? "md:ml-24 lg:ml-56 mt-4 ml-24" : ""
         }`}
       >
         <Routes>
