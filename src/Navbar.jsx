@@ -11,13 +11,13 @@ const Navbar = () => {
     "Counters",
     "Blogs",
   ];
-  const image_Url =
-    "https://images.unsplash.com/photo-1584441405886-bc91be61e56a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=430&q=80";
+  //   const image_Url =
+  //     "https://images.unsplash.com/photo-1584441405886-bc91be61e56a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=430&q=80";
 
   const [sideMenuOpen, setsideMenuOpen] = useState(false);
   return (
     <div className="px-2 flex flex-row items-center justify-between h-10 sticky top-0 bg-white border-b shadow-sm ">
-      <img src={image_Url} className="h-8 w-8 rounded-sm" alt="logo" />
+      <h2 className="font-semibold tracking-tight text-my-blue">Bokkey</h2>
       <ul className="flex-row gap-3 hidden md:flex">
         {links.map((link, index) => (
           <li key={index} className="cursor-pointer">
